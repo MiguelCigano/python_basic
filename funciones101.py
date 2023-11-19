@@ -35,3 +35,8 @@ def doblar_lista2(lis_n2):
 ls2 = [20, 100, 350]
 doblar_lista(ls2)
 print(ls2)
+
+
+
+
+
