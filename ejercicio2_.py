@@ -10,7 +10,7 @@ Ejercicio óptativo #1
 
 * (Optativo) añade un método llamado distancia que tome el segundo punto y calcule la distancia entre los dos puntos y la muestre por pantalla.
 
-d = sqrt((X1 - X2)^2 + (Y1 -Y2)^2)
+d = math.sqrt((X1 - X2)**2 + (Y1 -Y2)**2)
 
 """
 
@@ -50,10 +50,23 @@ class Punto():
         self.newvecX = self.X + self.X2
         self.newvecY = self.Y + self.Y2
         return print("Resultante es ({}, {})".format(self.newvecX, self.newvecY))
+    
+    # el siguiente método hace lo mismo que el anterior pero usando un objeto de la clase punto
+    def vect2(self, p):
+        print("la diferencia entre {} y {} es ({}, {})".format(self, p, p.X + self.X, p.Y + self.Y))
+    
+    def distancia(self):
+        self.d = math.sqrt((self.X - self.X2)**2 + (self.Y - self.Y2)**2)
+        print("distancia es {} ".format(self.d))
 
 
+p = Punto(2, 2)
+print(p)
 
-coor = Punto(2, 2)
-print(coor)
-coor.cuadrante()
-coor.vect(4, 2)
+p.cuadrante()
+p.vect(4, 2)
+
+b = Punto(4, 2)
+p.vect2(b)
+
+p.distancia()
