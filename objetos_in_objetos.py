@@ -38,4 +38,5 @@ lst = Lista([alum])
 # llamado de metodo de clase, para agregar un alumno sin necesidad de instanciar la clase "Alumno"
 lst.agregar_alumno(Alumno("María López", 22, 6))
 
+# =¿?
 lst.mostrar_alumnos()
