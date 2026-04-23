@@ -61,7 +61,7 @@ try:
                     tiempos.append(elapsed)
 
                     # Mantener sólo los últimos 100 puntos
-                    if len(valores) > 100:
+                    if len(valores) > 1000:
                         valores.pop(0)
                         tiempos.pop(0)
 
